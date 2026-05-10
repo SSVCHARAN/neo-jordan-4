@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   description: "Discover the next evolution of luxury footwear. Meticulous craftsmanship meets timeless silhouette.",
 };
 
+export const viewport = {
+  width: 1200,
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
