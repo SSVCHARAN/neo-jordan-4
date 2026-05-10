@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  width: 1024,
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-luxury-dark">
-      <body className={`${inter.variable} ${playfair.variable} bg-luxury-dark antialiased font-sans`}>
+      <body className={`${inter.variable} ${playfair.variable} bg-[#0A0A0A] antialiased font-sans min-w-[1200px] overflow-x-auto`}>
         {children}
       </body>
     </html>
